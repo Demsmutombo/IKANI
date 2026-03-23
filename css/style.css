@@ -50,31 +50,81 @@
 
 /*** Button ***/
 .btn {
-    transition: all 0.3s ease;
-    font-weight: 500;
+    transition: all 0.25s ease;
+    font-weight: 600;
     border: none;
-    border-radius: 6px;
+    border-radius: 8px;
+    box-shadow: var(--shadow-subtle);
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    padding: 0.5rem 1rem;
+    min-width: 120px;
+    font-size: 1rem;
+    border: 1px solid transparent;
+}
+
+.btn:hover,
+.btn:focus {
+    transform: translateY(-1px) scale(1.01);
+    box-shadow: var(--shadow-hover);
+    opacity: 0.98;
 }
 
 .btn-primary {
     background: linear-gradient(135deg, #00796b 0%, #004d40 100%) !important;
+    color: #fff !important;
     border: none;
 }
 
 .btn-primary:hover {
     background: linear-gradient(135deg, #004d40 0%, #002c26 100%) !important;
-    transform: translateY(-2px);
+}
+
+/* Boutons sociaux harmonisés */
+.btn-social {
+    background: var(--color-gradient);
+    color: #fff !important;
+    border-radius: 50px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.1rem;
+    box-shadow: var(--shadow-medium);
+    transition: all 0.2s;
+    border: none;
+    margin-right: 6px;
+}
+.btn-social:hover, .btn-social:focus {
+    background: var(--color-gradient-alt);
+    color: #fff !important;
     box-shadow: var(--shadow-hover);
+    transform: translateY(-2px) scale(1.06);
+    opacity: 0.97;
 }
 
 .btn-secondary {
     background: linear-gradient(135deg, #4db6ac 0%, #26a69a 100%) !important;
     border: none;
+    color: #fff !important;
 }
 
 .btn-secondary:hover {
     background: linear-gradient(135deg, #26a69a 0%, #00897b 100%) !important;
-    transform: translateY(-2px);
+    transform: translateY(-1px) scale(1.005);
+    box-shadow: var(--shadow-hover);
+}
+
+.btn-dark {
+    background: linear-gradient(135deg, #424242 0%, #212121 100%) !important;
+    border: none;
+    color: #fff !important;
+}
+
+.btn-dark:hover {
+    background: linear-gradient(135deg, #212121 0%, #000 100%) !important;
+    transform: translateY(-1px) scale(1.005);
     box-shadow: var(--shadow-hover);
 }
 
@@ -89,15 +139,15 @@
     box-shadow: var(--shadow-hover);
 }
 
-.btn-square {
-    width: 38px;
-    height: 38px;
-    border-radius: 50%;
-    transition: all 0.3s ease;
+.btn-lg-square {
+    width: 40px;
+    height: 40px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.1rem;
+    border-radius: 8px;
 }
-
-.btn-square:hover {
-    transform: translateY(-3px);
     box-shadow: var(--shadow-hover);
 }
 
