@@ -589,6 +589,29 @@
         text-align: center;
     }
 
+    .navbar-brand {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: auto;
+    }
+
+    .navbar-toggler {
+        margin-left: auto;
+    }
+
+    @media (max-width: 991.98px) {
+        .navbar-brand {
+            display: inline-flex;
+            margin-left: 0;
+            margin-right: 10px;
+        }
+
+        .navbar-toggler {
+            margin-left: auto;
+        }
+    }
+
     .header-carousel .carousel-text {
         text-align: center;
         width: 100%;
